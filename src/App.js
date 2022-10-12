@@ -1,9 +1,9 @@
-import MostrarGifs from "./componentes/MostrarGifs";
+import RenderHome from "./componentes/RenderHome";
 
 function App() {
   return (
   <div className="bg-slate-100 flex object-center items-center h-full">
-    <MostrarGifs/>
+    <RenderHome/>
   </div>
   );
 }

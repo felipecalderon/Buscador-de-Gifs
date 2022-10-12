@@ -8,12 +8,11 @@ export default function Formulario({setFrase}){
     }
 
     const buscador = (e) => {
-        e.preventDefault()
         setFrase(e.target.value)
     }
 
     return (
-    <div>
+    <div className="container mx-auto">
         <p className="text-xl text-center my-3">Comienza a escribir para buscar divertidos Gifs</p>   
         <form onSubmit={enviaForm} className="my-2 w-6/12 mx-auto">
             <div className="relative">
