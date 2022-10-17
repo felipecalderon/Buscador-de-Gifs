@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import RenderGifs from "./RenderGifs";
-import Formulario from "./Formulario";
+import BuscadorGifs from "./BuscadorGifs";
 
 const RenderHome = () => {
     const [frase, setFrase] = useState('simpsons')
     
     return (
     <div>
-        <Formulario setFrase={setFrase} />
+        <BuscadorGifs setFrase={setFrase} />
         <RenderGifs palabra={frase} />
     </div>
     )

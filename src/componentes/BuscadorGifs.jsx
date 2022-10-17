@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Formulario({setFrase}){
+export default function BuscadorGifs({setFrase}){
 
     const enviaForm = (e) => {
         e.preventDefault()

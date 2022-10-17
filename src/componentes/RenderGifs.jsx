@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Getgifs from './hooks/getGifs'
-import ListaGifs from './hooks/listaGifs'
+import Getgifs from './hooks/ConsultaGifs'
+import ListaGifs from './ListaGifs'
 
 export default function RenderGifs({palabra}){
     const [gifs, setGif] = useState([])
