@@ -2,7 +2,7 @@ import RenderHome from "./componentes/RenderHome";
 
 function App() {
   return (
-  <div className="bg-slate-100 flex object-center items-center h-full">
+  <div className="bg-slate-200 h-full py-3">
     <RenderHome/>
   </div>
   );

@@ -1,8 +1,8 @@
 
-const apiKey = 'srOjDE0i4ysRJDQgv0R28T71HWgffWX7'
+const apiKey = process.env.REACT_APP_APIKEY_GIPHY
 const cantidad = 12
 
-const Getgifs = ({palabra, setCargando}) => {
+const Getgifs = ({palabra}) => {
   const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${palabra}&limit=${cantidad}&offset=0&rating=r&lang=es`
       return fetch(url)
         .then(res => res.json())
@@ -13,8 +13,7 @@ const Getgifs = ({palabra, setCargando}) => {
             const {url} = images.original
             return {title, id, url}
           })
-        setCargando(false)
-         return gifs
+        return gifs
         })
 }
 
